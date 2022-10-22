@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+/* TODO VARIABLE NAMES FOR FONT WEIGHT AND SIZE */
+:root {
+  /* color */
+  --grey: #5a716c;
+  --silver: #a7b6af;
+  --dark-green: #415853;
+  --white: #ffffff;
+  --yellow: #c9a479;
+  --poppins: "Poppins", sans-serif;
+  --lato: "Lato", sans-serif;
+  /* Font size */
+  --xxxl: 6rem;
+  --xxl: 5.5rem;
+  --xl: 5rem;
+  --large: 2.8rem;
+  --medium: 3rem;
+  --small: 1.4rem;
+  --extrasmall: 1rem;
+  /* font weight */
+  --bold: 700;
+  --regular: 500;
+  --thin: 400;
+}
+
+.heading-first {
+  font-size: var(--xxxl);
+  font-weight: var(--thin);
+  font-family: var(--poppins);
+  color: var(--white);
+}
+
+.heading-second {
+  font-size: var(--xxxl);
+  font-weight: var(--bold);
+  font-family: var(--poppins);
+  color: var(--yellow);
+}
+
+.container {
+  height: fit-content;
+  font-family: var(--poppins);
+  padding: 4.3125rem 15rem 0 15rem;
+  line-height: 1.2;
+}
+
+.app-container {
+  background-color: var(--grey);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* ********************************************** */
+/*  *************** NAVBAR SECTION *************** */
+/* ********************************************** */
+.navbar-main {
+  height: 4rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-items li > a {
+  font-size: var(--small);
+  font-weight: var(--bold);
+  font-family: var(--lato);
+  color: var(--dark-green);
+}
+
+.navbar-item-active > a {
+  font-size: var(--small);
+  font-weight: var(--bold);
+  font-family: var(--lato);
+  color: var(--white) !important;
+  background-color: var(--dark-green);
+  padding: 0.5rem 0.95rem;
+  border-radius: 42.82px;
+}
+
+.navbar-items ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-items ul li {
+  padding: 1rem 2rem 0 2rem;
+}
+.navbar-social ul li {
+  margin: 0.5rem 2rem;
+}
+
+.navbar-social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-social-image {
+}
+/* ********************************************** */
+/*  *************** INTRO SECTION *************** */
+/* ********************************************** */
+
+.intro-section-main {
+  display: flex;
+}
+
+.intro-section-main-text {
+  padding-top: 10.5rem;
+}
+.intro-section-hey {
+  font-size: var(--xl);
+  font-weight: var(--thin);
+  color: var(--white);
+  line-height: 80%;
+}
+
+.intro-section-dion {
+  font-size: var(--xxl);
+  font-weight: var(--bold);
+  color: var(--yellow);
+}
+.intro-section-pharm {
+  font-size: var(--large);
+  font-weight: var(--regular);
+  color: var(--silver);
+  line-height: 100%;
+}
+
+.intro-section-about {
+  font-size: var(--small);
+  font-weight: var(--thin);
+  font-family: var(--lato);
+  color: var(--white);
+  line-height: 200%;
+  margin-top: -10px;
+  margin-bottom: 100px;
+}
+
+/* ********************************************** */
+/*  *************** QUALIFICATION SECTION *************** */
+/* ********************************************** */
+
+.qualification-title {
+  font-size: var(--xl);
+  font-weight: var(--bold);
+  color: var(--silver);
+}
+
+ul.qualification-pointers {
+  color: var(--yellow);
+  list-style: none;
+}
+
+ul.qualification-pointers li {
+  font-style: italic;
+  color: var(--white);
+  line-height: 4.1688rem;
+}
+
+ul.qualification-pointers li::before {
+  content: "•";
+  color: var(--yellow);
+  size: 2rem;
+  margin-right: 0.7312rem;
+}
+
+ul.qualification-point li {
+  font-size: var(--small);
+  font-weight: var(--thin);
+  color: var(--silver);
+}
+
+/* ********************************************** */
+/*  *************** PUBLICATION SECTION *************** */
+/* ********************************************** */
+
+.publication-main {
+  background-color: var(--dark-green);
+  height: fit-content;
+  border-radius: 7.9287rem;
+  margin: 105px 104px;
+  /* padding: 86px 134px; */
+}
+
+.publication-title {
+  margin-bottom: 6.9375rem;
+}
+.publication-title-my {
+}
+
+.publication-title-publications {
+}
+
+.publication-content-name p::first-line {
+  font-weight: var(--bold);
+}
+
+.publication-content-name {
+  font-size: var(--small);
+  font-weight: var(--thin);
+  font-family: var(--lato);
+  color: var(--white);
+}
+
+.publication-content-button {
+  border-radius: 0.5387rem;
+  background-color: var(--silver);
+  border: none;
+  width: 10.625rem;
+  height: 3.3125rem;
+  margin-bottom: 2rem;
+}
+.publication-content-button a {
+  color: var(--white);
+  font-size: var(--extrasmall);
+}
+.publication-content-button a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* ********************************************** */
+/*  *************** SKILL SECTION *************** */
+/* ********************************************** */
+.skill-main {
+  background-color: var(--dark-green);
+  padding-bottom: 4.25rem;
+}
+
+.skill-main-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4.25rem;
+}
+
+.skill-title {
+  margin-bottom: 8.5rem;
+}
+.skill-main-item-image {
+  margin-right: 4.25rem;
+}
+.skill-main-item-text {
+  display: flex;
+  flex-direction: column;
+}
+.skill-main-item-title {
+  font-size: var(--large);
+  font-weight: var(--bold);
+  font-family: var(--poppins);
+  color: var(--white);
+  margin-bottom: 0.8125rem;
+}
+.skill-main-item-detail {
+  font-size: var(--small);
+  font-weight: var(--thin);
+  font-family: var(--lato);
+  color: var(--white);
+}
+/* ********************************************** */
+/*  *************** EXPERIENCE SECTION *************** */
+/* ********************************************** */
+
+.experience-main {
+  margin-top: 4rem;
+}
+
+.experience-main-text {
+  font-size: var(--small);
+  font-weight: var(--thin);
+  font-family: var(--lato);
+  color: var(--white);
+  margin-top: 3.125rem;
+  line-height: 2.9769rem;
+}
+
+.experience-main-detail {
+  background-color: var(--dark-green);
+  height: fit-content;
+  border-radius: 7.9287rem;
+  margin: 105px 104px;
+  padding: 90px 78px 50px 158px;
+}
+
+.experience-main-detail-item {
+  margin-bottom: 6.4375rem;
+}
+
+.experience-main-detail-item-year {
+  font-size: var(--medium);
+  font-weight: var(--bold);
+  font-family: var(--poppins);
+  color: var(--yellow);
+}
+
+.experience-main-detail-item-title {
+  font-size: var(--small);
+  font-weight: var(--thin);
+  font-family: var(--lato);
+  color: var(--white);
+}
+
+/* ********************************************** */
+/*  *************** FOOTER SECTION *************** */
+/* ********************************************** */
+.footer-main,
+.footer-connect {
+  margin-top: 4rem;
+}
+.footer-connect-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-connect-email img {
+  margin: 1rem;
+}
+.footer-connect-email-text {
+  font-size: var(--small);
+  font-weight: var(--regular);
+  font-family: var(--lato);
+  color: var(--white);
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7rem 0 5rem 0;
+}
+
+.footer-quote {
+  background-color: var(--dark-green);
+  height: fit-content;
+  border-radius: 7.9287rem 7.9287rem 0 0;
+  padding: 201px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-quote-img {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-quote-text {
+  font-size: var(--xl);
+  font-weight: var(--bold);
+  font-family: var(--lato);
+  margin-bottom: 6rem;
+  color: var(--silver);
+}
+
+.footer-quote-author {
+  font-size: var(--xl);
+  font-weight: var(--bold);
+  font-family: var(--lato);
+  color: var(--silver);
+  text-align: center;
+  margin-top: 6rem;
+}
