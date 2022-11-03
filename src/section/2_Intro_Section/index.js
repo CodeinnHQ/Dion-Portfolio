@@ -5,7 +5,7 @@ function IntroSection() {
     <div className="intro-section-container container" id="introsection">
       <div className="intro-section-main">
         <div className="intro-section-main-text">
-          <div className="intro-section-hey">Hey Its </div>
+          <div className="intro-section-hey">Hey It❜s </div>
           <div className="intro-section-dion">Dion C. Allen</div>
           <div className="intro-section-pharm">Pharmaceutical Science</div>
         </div>

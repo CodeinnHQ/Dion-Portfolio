@@ -5,12 +5,13 @@ import Skill from "./section/4_Skills";
 import Experience from "./section/5_Experience";
 import "./variable.css";
 import Footer from "./section/6_Footer/index";
-import Navbar from "./section/1_Navbar";
+import { NavbarDesktop, NavbarMobile } from "./section/1_Navbar";
 
 function App() {
   return (
     <div className="app-container">
-      <Navbar />
+      <NavbarDesktop />
+      <NavbarMobile />
       <IntroSection />
       <Qualification />
       <Publication />

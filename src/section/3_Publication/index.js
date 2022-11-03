@@ -1,20 +1,5 @@
 import React from "react";
-
-const publications = [
-  {
-    name: "Lorem occaecat mollit magna officia in sint et cillum ipsum laboris laborum quis. Consectetur aliqua cillum occaecat eu laborum. Enim ea ut aute cillum",
-    link: "https://stackoverflow.com/questions/4126182/how-can-i-override-a-parent-elements-padding-from-a-child",
-  },
-  {
-    name: "Lorem occaecat mollit magna officia in sint et cillum ipsum laboris laborum quis. Consectetur aliqua cillum occaecat eu laborum. Enim ea ut aute cillum",
-    link: "https://stackoverflow.com/questions/4126182/how-can-i-override-a-parent-elements-padding-from-a-child",
-  },
-  {
-    name: "Lorem occaecat mollit magna officia in sint et cillum ipsum laboris laborum quis. Consectetur aliqua cillum occaecat eu laborum. Enim ea ut aute cillum",
-    link: "https://stackoverflow.com/questions/4126182/how-can-i-override-a-parent-elements-padding-from-a-child",
-  },
-];
-
+import { publications } from "../../data";
 function Publication() {
   return (
     <div className="publication-main container" id="publication">
@@ -26,14 +11,16 @@ function Publication() {
       </div>
       <div className="publication-content">
         {publications.map((paper) => (
-          <>
-            <p className="publication-content-name">{paper.name}</p>
+          <div id={paper.id}>
+            <div className="publication-content-name">
+              <p>{paper.name}</p>
+            </div>
             <button className="publication-content-button">
               <a href={paper.link} target="_blank">
                 Go To
               </a>
             </button>
-          </>
+          </div>
         ))}
       </div>
     </div>

@@ -15,13 +15,13 @@ import facebooknav from "./Assets/Facebooknav.png";
 
 export const navbar = [
   {
-    name: "Facebook",
-    img: facebooknav,
+    name: "LinkedIn",
+    img: linkedinnav,
     link: "",
   },
   {
-    name: "LinkedIn",
-    img: linkedinnav,
+    name: "Facebook",
+    img: facebooknav,
     link: "",
   },
   {
@@ -29,6 +29,12 @@ export const navbar = [
     img: twitternav,
     link: "",
   },
+];
+export const qualification = [
+  "Ph.D., Pharmaceutical Sciences,  Nova Southeastern  University FL,  Aug   2019-Present",
+  "M.S., Applied Psychology, Lynn University, FL, May 2018",
+  "B.S., Psychology, University of the West Indies (U.W.I), Jamaica, Sep 2012",
+  "Innovative Teaching and Learning In Clinical Sciences and Pharmacy (ITALICSRx) Teaching Certificate, Nova Southeastern University, FL, June 2022",
 ];
 export const skills = [
   {
@@ -69,43 +75,69 @@ export const experience = {
     "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ",
   "experience-list": [
     {
+      id: 1,
       year: "2022 - 2023",
       title:
         "Chapter Onboarding Committee Member, ISPOR - National Student Society",
+      skill: ["development", "software", "medicine"],
+      contribution: [
+        "loNostrud Lorem sit minim cillum laboris laboris ullamco voluptate aliquip culpa id eiusmod exercitation.",
+        "Sint ea ex minim exercitation aliqua esse.",
+      ],
     },
     {
-      year: "2022 - 2023",
-      title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student SocietyOnboarding Committee Member, ISPOR - National Student Societ",
-    },
-    {
-      year: "2022 - 2023",
-      title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student Society Onboarding Committee Member, ISPOR - National Student Societ",
-    },
-    {
+      id: 2,
       year: "2022 - 2023",
       title:
         "Chapter Onboarding Committee Member, ISPOR - National Student Society",
+      skill: ["development", "software", "medicine"],
+      contribution: [
+        "loCillum voluptate aute labore veniam exercitation veniam.",
+        "Reprehenderit qui incididunt deserunt ad incididunt eu voluptate incididunt magna elit est enim est velit.",
+      ],
     },
     {
+      id: 3,
       year: "2022 - 2023",
       title:
         "Chapter Onboarding Committee Member, ISPOR - National Student Society",
+      skill: ["development", "software", "medicine"],
+      contribution: [
+        "loIn ullamco consequat veniam ea aute nulla cillum.",
+        "Nisi eiusmod sunt enim amet ut commodo ad amet irure sint.",
+      ],
     },
     {
+      id: 4,
       year: "2022 - 2023",
       title:
         "Chapter Onboarding Committee Member, ISPOR - National Student Society",
-    },
-    {
-      year: "2022 - 2023",
-      title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student Society",
+      skill: ["development", "software", "medicine"],
+      contribution: [
+        "loElit occaecat consectetur culpa aute commodo aliqua in consequat duis sunt amet.",
+        "Lorem nulla ut proident irure incididunt ex labore exercitation eiusmod nostrud ipsum pariatur.",
+      ],
     },
   ],
 };
 
+export const publications = [
+  {
+    id: 1,
+    name: "Acknowledging and addressing the gender disparity in pre-exposure prophylaxis use for HIV prevention",
+    link: "https://academic.oup.com/jphsr/article-abstract/13/3/168/6645632",
+  },
+  {
+    id: 2,
+    name: "The Effect of Antihypertensive Medication Use on the Severity of Depressive Symptoms in Adults Diagnosed with Hypertension",
+    link: "https://www.valueinhealthjournal.com/article/S1098-3015(22)01590-X/fulltext#relatedArticles",
+  },
+  {
+    id: 3,
+    name: "An Evaluation of the Use of Psychotropic Agents Among Adults 65 Years or Older with Type 2 Diabetes",
+    link: "https://www.valueinhealthjournal.com/article/S1098-3015(21)00642-2/fulltext",
+  },
+];
 export const footer = {
   contact: [
     {
@@ -121,15 +153,16 @@ export const footer = {
   ],
   social: [
     {
-      name: "facebook",
-      img: facebook,
-      link: "",
-    },
-    {
       name: "linkedin",
       img: linkedin,
       link: "",
     },
+    {
+      name: "facebook",
+      img: facebook,
+      link: "",
+    },
+
     {
       name: "twitter",
       img: twitter,
