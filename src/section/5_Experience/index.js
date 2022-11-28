@@ -34,8 +34,15 @@ function Experience() {
         {experience["experience-list"].map(
           ({ id, year, title, skill, contribution }) => (
             <div className="experience-main-detail-item">
-              <div className="experience-main-detail-item-year">{year}</div>
-              <div className="experience-main-detail-item-title">{title}</div>
+              <div>
+                <div></div>
+                <div>
+                  <div className="experience-main-detail-item-year">{year}</div>
+                  <div className="experience-main-detail-item-title">
+                    {title}
+                  </div>
+                </div>
+              </div>
               <button
                 className="experience-main-detail-item-button"
                 onClick={handleSeeMore}
@@ -43,9 +50,9 @@ function Experience() {
               >
                 see more
                 {isSeeMoreOpen && currentId === id ? (
-                  <img src="https://img.icons8.com/material-rounded/10/FFFFFF/give-way.png" />
-                ) : (
                   <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/10/FFFFFF/external-glyph-shapes-tanah-basah-glyph-tanah-basah-69.png" />
+                ) : (
+                  <img src="https://img.icons8.com/material-rounded/10/FFFFFF/give-way.png" />
                 )}
               </button>
               {isSeeMoreOpen && currentId === id && (

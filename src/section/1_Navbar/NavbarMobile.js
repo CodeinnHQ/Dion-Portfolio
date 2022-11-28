@@ -4,7 +4,6 @@ import { navbar } from "./../../data";
 function NavbarMobile() {
   const handleHamburger = () => {
     const list = document.getElementsByClassName("navbarM-items")[0];
-    console.log(list);
     if (list.style.display === "block") {
       list.style.display = "none";
     } else list.style.display = "block";
