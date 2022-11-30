@@ -176,3 +176,9 @@ export const footer = {
     author: "Nelson Mandela",
   },
 };
+
+export const grants = [
+  "University of Puerto Rico – Mentoring Institute for HIV and Mental Health Research, funded by the National Institute of Mental Health (NIMH). A mentorship grant for the development of early career researchers in HIV and mental health. Resulted in a paper submitted for publication (commentary), ‘Acknowledging and Addressing the Gender Disparity in Pre-exposure Prophylaxis Use’",
+  "International Society for Pharmacoeconomics and Outcomes Research (ISPOR) Student Conference Grant (2022). A grant made available to ISPOR student members to attend the society’s annual virtual conferences.",
+  "The Center for Health Economics of Treatment Interventions for Substance Use Disorder, HCV, and HIV (CHERISH) Pilot Grant – CHERISH is funded by NIDA (P30DA040500) as a collaboration among Weill Cornell Medicine, Boston Medical Center, Boston University School of Public Health, University of Pennsylvania, and University of Miami Miller School of Medicine. https://cherishresearch.org/2022/07/five-researchers-receive-cherish-pilot-awards-to-advance-the-treatment-of-substance-use-disorders-hcv-and-hiv/",
+];

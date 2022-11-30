@@ -6,6 +6,7 @@ import Experience from "./section/5_Experience";
 import "./variable.css";
 import Footer from "./section/6_Footer/index";
 import { NavbarDesktop, NavbarMobile } from "./section/1_Navbar";
+import GrantsSection from "./section/5.5_Grants";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Publication />
       <Skill />
       <Experience />
+      <GrantsSection />
       <Footer />
     </div>
   );
