@@ -5,6 +5,23 @@ function Experience() {
     currentId: null,
     isSeeMoreOpen: false,
   });
+  const [{ hover, id }, setHover] = useState(false);
+  const handleHover = (event) => {
+    // console.log(event.currentTarget.id, hover, id);
+    setHover({
+      hover: !hover,
+      id: event.currentTarget.id,
+    });
+    const parent = event.currentTarget.parentElement;
+
+    const highlightElement = event.currentTarget.firstChild;
+
+    let firstLink = parent.firstChild;
+    do {
+      firstLink.firstChild.firstChild.classList.remove("experience-highlight");
+    } while ((firstLink = firstLink.nextSibling));
+    highlightElement.firstChild.classList.add("experience-highlight");
+  };
   const handleSeeMore = (event) => {
     if (event.target.id == currentId) {
       setShowSeeMore({
@@ -33,9 +50,13 @@ function Experience() {
       <div className="experience-main-detail container">
         {experience["experience-list"].map(
           ({ id, year, title, skill, contribution }) => (
-            <div className="experience-main-detail-item">
-              <div>
-                <div></div>
+            <div
+              className="experience-main-detail-item"
+              onMouseEnter={handleHover}
+              onMouseLeave={handleHover}
+            >
+              <div className="highlight-section">
+                <div className="experience-highlight-container"></div>
                 <div>
                   <div className="experience-main-detail-item-year">{year}</div>
                   <div className="experience-main-detail-item-title">

@@ -16,6 +16,7 @@
   --xl: 5rem;
   --large: 3.8rem;
   --medium: 2.8rem;
+  --medium-responsive: 2.4rem;
   --small: 1.4rem;
   --extrasmall: 1.1rem;
   /* font weight */
@@ -242,6 +243,7 @@ a:active {
 } */
 .intro-section-main {
   display: flex;
+  justify-content: space-around;
 }
 
 .intro-section-main img {
@@ -290,13 +292,22 @@ a:active {
   .intro-section-about {
     margin-top: 0;
   }
+  .intro-section-hey {
+    font-size: var(--large);
+  }
+
+  .intro-section-dion {
+    font-size: var(--xl);
+  }
+  .intro-section-pharm {
+    font-size: var(--medium-responsive);
+  }
 }
 /* ********************************************** */
 /*  *************** QUALIFICATION SECTION *************** */
 /* ********************************************** */
 .qualification-main {
   margin-bottom: 20px;
-  margin-right: 220px;
 }
 
 @media (max-width: 1080px) {
@@ -378,6 +389,21 @@ ul.qualification-point li > span {
 
 .publication-content-name p::first-line {
   font-weight: var(--bold);
+}
+
+.publication-content-item {
+  display: flex;
+  flex-direction: row;
+}
+.publication-highlight-container {
+  min-width: 1rem;
+  width: 0.5rem;
+  margin: 0.5rem 1rem 4rem 0;
+  border-radius: 2.6763rem;
+}
+.publication-highlight {
+  background-color: var(--yellow);
+  transition: background-color 1s ease-in;
 }
 
 .publication-content-name {
@@ -481,7 +507,20 @@ a:active {
 .experience-main-detail-item {
   margin-bottom: 6.4375rem;
 }
-
+.highlight-section {
+  display: flex;
+  flex-direction: row;
+}
+.experience-highlight-container {
+  min-width: 1rem;
+  width: 0.5rem;
+  margin: 0.5rem 1rem 0 0;
+  border-radius: 2.6763rem;
+}
+.experience-highlight {
+  background-color: var(--yellow);
+  transition: background-color 1s ease-in;
+}
 .experience-main-detail-item-year {
   font-size: var(--medium);
   font-weight: var(--bold);
@@ -506,7 +545,11 @@ a:active {
   background-color: var(--grey);
   padding: 0.5rem;
   margin-top: 1.5rem;
+  margin-left: 2rem;
   cursor: pointer;
+}
+.experience-main-detail-item-see-more {
+  margin-left: 2rem;
 }
 .experience-main-detail-item-button > img {
   margin-left: 0.2rem;
