@@ -151,7 +151,7 @@ a:active {
   width: 2.2rem;
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1340px) and (min-width: 1080px) {
   .navbar-main {
     justify-content: space-evenly;
   }
@@ -300,6 +300,19 @@ a:active {
   height: 2rem;
   margin-bottom: 2rem;
   cursor: pointer;
+  margin-top: 2rem;
+}
+@media (max-width: 480px) {
+  .intro-section-hey {
+    font-size: var(--medium);
+  }
+
+  .intro-section-dion {
+    font-size: var(--large);
+  }
+  .intro-section-pharm {
+    font-size: var(--medium-responsive);
+  }
 }
 @media (max-width: 1080px) {
   .intro-section-container {
@@ -310,6 +323,7 @@ a:active {
 
   .intro-section-about {
     margin-top: 0;
+    line-height: 3rem;
   }
   .intro-section-hey {
     font-size: var(--large);
@@ -348,14 +362,24 @@ ul.qualification-pointers {
   list-style: none;
   margin-left: 2rem;
   margin-top: 2rem;
+  /* padding: 5.5rem;
+  border-radius: 6rem;
+  background-color: var(--dark-green); */
 }
 
 ul.qualification-pointers li {
   color: var(--white);
   line-height: 3.1688rem;
   text-indent: -1.45rem;
+  margin-bottom: 1rem;
 }
 
+ul.grants-pointers li {
+  color: var(--white);
+  line-height: 3.1688rem;
+  text-indent: -1.45rem;
+  margin-bottom: 3rem;
+}
 ul.qualification-pointers li::before {
   content: url("https://img.icons8.com/ios-filled/10/c9a479/360-degrees.png");
   color: var(--yellow);
@@ -370,6 +394,12 @@ ul.qualification-point li {
   color: var(--silver);
 }
 
+ul.grants-pointers li {
+  font-size: var(--extrasmall);
+  font-weight: var(--extrabold);
+  font-family: var(--lato);
+  color: var(--white);
+}
 ul.qualification-point li > span {
   font-weight: var(--regular);
 }
