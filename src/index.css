@@ -327,7 +327,7 @@ a:active {
     font-size: var(--medium-responsive);
   }
   .intro-section-main img {
-    width: 35%;
+    width: 30%;
     height: auto;
     padding-top: 2rem;
   }
