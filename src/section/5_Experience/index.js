@@ -64,18 +64,20 @@ function Experience() {
                   </div>
                 </div>
               </div>
-              <button
-                className="experience-main-detail-item-button"
-                onClick={handleSeeMore}
-                id={id}
-              >
-                see more
-                {isSeeMoreOpen && currentId === id ? (
-                  <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/10/FFFFFF/external-glyph-shapes-tanah-basah-glyph-tanah-basah-69.png" />
-                ) : (
-                  <img src="https://img.icons8.com/material-rounded/10/FFFFFF/give-way.png" />
-                )}
-              </button>
+              {(skill || contribution) && (
+                <button
+                  className="experience-main-detail-item-button"
+                  onClick={handleSeeMore}
+                  id={id}
+                >
+                  see more
+                  {isSeeMoreOpen && currentId === id ? (
+                    <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/10/FFFFFF/external-glyph-shapes-tanah-basah-glyph-tanah-basah-69.png" />
+                  ) : (
+                    <img src="https://img.icons8.com/material-rounded/10/FFFFFF/give-way.png" />
+                  )}
+                </button>
+              )}
               {isSeeMoreOpen && currentId === id && (
                 <div className="experience-main-detail-item-see-more">
                   <h5>Skills</h5>

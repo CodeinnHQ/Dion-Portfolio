@@ -20,13 +20,7 @@ function IntroSection() {
           <div className="intro-section-dion">Dion C. Allen</div>
           <div className="intro-section-pharm">Pharmaceutical Science</div>
         </div>
-        <img
-          src={ProfilePhoto}
-          //TODO : ASPECT RATIO
-          width="425px"
-          height="450px"
-          alt="profile photo"
-        />
+        <img src={ProfilePhoto} alt="profile photo" />
       </div>
       <div
         id="intro-section-about"

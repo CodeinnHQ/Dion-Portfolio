@@ -17,7 +17,7 @@ export const navbar = [
   {
     name: "LinkedIn",
     img: linkedinnav,
-    link: "",
+    link: "https://www.linkedin.com/in/dion-allen-68388918b",
   },
   {
     name: "Facebook",
@@ -27,7 +27,7 @@ export const navbar = [
   {
     name: "Twitter",
     img: twitternav,
-    link: "",
+    link: "https://twitter.com/DionAllen1234",
   },
 ];
 export const qualification = [
@@ -76,9 +76,9 @@ export const experience = {
   "experience-list": [
     {
       id: 1,
-      year: "2022 - 2023",
+      year: "2022 – 2023",
       title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student Society",
+        "Chapter Onboarding Committee Member, The Professional Society for Health Economics and Pharmacy Outcomes Research (ISPOR) - National Student Society",
       skill: ["development", "software", "medicine"],
       contribution: [
         "loNostrud Lorem sit minim cillum laboris laboris ullamco voluptate aliquip culpa id eiusmod exercitation.",
@@ -89,34 +89,45 @@ export const experience = {
       id: 2,
       year: "2022 - 2023",
       title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student Society",
-      skill: ["development", "software", "medicine"],
-      contribution: [
-        "loCillum voluptate aute labore veniam exercitation veniam.",
-        "Reprehenderit qui incididunt deserunt ad incididunt eu voluptate incididunt magna elit est enim est velit.",
-      ],
+        "Secretary, ISPOR, Student Chapter, NSU, College of Pharmacy, Davie, FL",
     },
     {
       id: 3,
-      year: "2022 - 2023",
+      year: "2021 - 2022",
       title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student Society",
-      skill: ["development", "software", "medicine"],
-      contribution: [
-        "loIn ullamco consequat veniam ea aute nulla cillum.",
-        "Nisi eiusmod sunt enim amet ut commodo ad amet irure sint.",
-      ],
+        "Invited Guest Lecture, “The Intersection of HIV History and Public Health, NSU, College of Pharmacy",
     },
     {
       id: 4,
-      year: "2022 - 2023",
+      year: "2021 - 2022",
+      title: "Student Mentor, NSU, College of Pharmacy",
+    },
+    {
+      id: 5,
+      year: "2021 - 2022",
+      title: "President, ISPOR, Student Chapter, NSU, College of Pharmacy",
+    },
+    {
+      id: 6,
+      year: "2021 - 2022",
       title:
-        "Chapter Onboarding Committee Member, ISPOR - National Student Society",
-      skill: ["development", "software", "medicine"],
-      contribution: [
-        "loElit occaecat consectetur culpa aute commodo aliqua in consequat duis sunt amet.",
-        "Lorem nulla ut proident irure incididunt ex labore exercitation eiusmod nostrud ipsum pariatur.",
-      ],
+        "Guest Judge for PharmD students, Secondary Database Analysis, NSU",
+    },
+    {
+      id: 7,
+      year: "2020 - 2021",
+      title:
+        "Class Advisor, Master of Science in Pharmaceutical Affairs, NSU, College of Pharmacy",
+    },
+    {
+      id: 8,
+      year: "2020 - 2021",
+      title: "Treasurer, ISPOR, Student Chapter, NSU, College of Pharmacy",
+    },
+    {
+      id: 9,
+      year: "2019 - 2020",
+      title: "Teaching/Graduate Assistant, NSU, College of Pharmacy",
     },
   ],
 };
@@ -155,7 +166,7 @@ export const footer = {
     {
       name: "linkedin",
       img: linkedin,
-      link: "",
+      link: "https://www.linkedin.com/in/dion-allen-68388918b",
     },
     {
       name: "facebook",
@@ -166,7 +177,7 @@ export const footer = {
     {
       name: "twitter",
       img: twitter,
-      link: "",
+      link: "https://twitter.com/DionAllen1234",
     },
   ],
   quote: {
