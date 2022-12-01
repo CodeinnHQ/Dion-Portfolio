@@ -317,17 +317,17 @@ a:active {
     line-height: 3rem;
   }
   .intro-section-hey {
-    font-size: var(--large);
+    font-size: 3.5rem;
   }
 
   .intro-section-dion {
-    font-size: var(--xl);
+    font-size: 4rem;
   }
   .intro-section-pharm {
     font-size: var(--medium-responsive);
   }
   .intro-section-main img {
-    width: 30%;
+    width: 40%;
     height: auto;
     padding-top: 2rem;
   }
