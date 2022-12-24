@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState, useMemo } from "react";
 import IntroSection from "./section/2_Intro_Section";
 import Qualification from "./section/2_Qualification";
 import Publication from "./section/3_Publication";
@@ -14,7 +15,7 @@ function App() {
       <NavbarDesktop />
       <NavbarMobile />
       <IntroSection />
-      <Qualification />
+      <Qualification id="qual" />
       <Publication />
       <Skill />
       <Experience />

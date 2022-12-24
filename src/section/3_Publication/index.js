@@ -13,7 +13,6 @@ function Publication() {
     const parent = event.currentTarget.parentElement;
     let firstLink = parent.firstChild;
     do {
-      console.log(firstLink);
       firstLink.firstChild.classList.remove("publication-highlight");
     } while ((firstLink = firstLink.nextSibling));
     highlightElement.classList.add("publication-highlight");
