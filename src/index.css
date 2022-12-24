@@ -671,7 +671,7 @@ a:active {
 .footer-social-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 4rem 0 5rem 0;
 }
 

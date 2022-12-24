@@ -19,11 +19,7 @@ export const navbar = [
     img: linkedinnav,
     link: "https://www.linkedin.com/in/dion-allen-68388918b",
   },
-  {
-    name: "Facebook",
-    img: facebooknav,
-    link: "",
-  },
+
   {
     name: "Twitter",
     img: twitternav,
@@ -167,11 +163,6 @@ export const footer = {
       name: "linkedin",
       img: linkedin,
       link: "https://www.linkedin.com/in/dion-allen-68388918b",
-    },
-    {
-      name: "facebook",
-      img: facebook,
-      link: "",
     },
 
     {
