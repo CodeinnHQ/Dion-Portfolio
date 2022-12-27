@@ -148,14 +148,9 @@ export const publications = [
 export const footer = {
   contact: [
     {
-      key: "phone",
-      img: phone,
-      value: "4759843679548",
-    },
-    {
       key: "email",
       img: email,
-      value: "randpm@gmail.com",
+      value: " dion.cooper11@gmail.com",
     },
   ],
   social: [
